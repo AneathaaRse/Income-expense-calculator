@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+.container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+}
+  
+h1 {
+    text-align: center;
+    color: #333;
+}
+  
+.display {
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.display h2 {
+    margin-bottom: 10px;
+}
+  
+.display h3 {
+    display: inline-block;
+    margin-right: 15px;
+}
+  
+.form-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+input, select, button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+  
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #218838;
+}
+  
+.history {
+    margin-top: 20px;
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+  
+li.income {
+    border-left: 4px solid #28a745;
+}
+  
+li.expense {
+    border-left: 4px solid #dc3545;
+}
+  
+
+li button {
+    padding: 5px 10px; 
+    font-size: 12px;  
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+li button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}

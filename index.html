@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income & Expense Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Income & Expense Calculator</h1>
+
+    <div class="display">
+      <div>
+        <h2>Balance: ₹<span id="balance">0.00</span></h2>
+      </div>
+      <div>
+        <h3>Income: ₹<span id="income-total">0.00</span></h3>
+        <h3>Expenses: ₹<span id="expense-total">0.00</span></h3>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h3>Add Income or Expense</h3>
+      <form id="transaction-form">
+        <input type="text" id="description" placeholder="Enter Description" required>
+        <input type="number" id="amount" placeholder="Enter Amount" required>
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button type="submit">Add Transaction</button>
+        <li class="income">
+            Salary <span>₹5000.00</span>
+            <button onclick="deleteTransaction(123456789)">Delete</button>
+          </li>
+          
+      </form>
+    </div>
+
+    <div class="history">
+      <h3>Transaction History</h3>
+      <ul id="transaction-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
